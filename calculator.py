@@ -7,6 +7,8 @@ window.configure(bg="red")
 display = Entry(window, width=80, bg="black", fg="white")  # input field
 display.grid(row=0, column=0)
 
+def cal(val):
+    display.insert(0,val)
 
 
 button1 = Button(window, text="7", command=lambda :cal(7), width=10, height=5, bg="white", activebackground="light blue")
